@@ -19,3 +19,10 @@ def triangle(t, length):
         t.forward(length)
         t.right(120)
    
+def polygon(t, length, sides):
+    internal_angle = ((sides-2) * 180) / sides
+    external_angle = 180 - internal_angle
+    for _ in range(sides):
+        t.forward(length)
+        t.right(external_angle)
+    
