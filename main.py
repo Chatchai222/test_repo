@@ -29,5 +29,24 @@ def draw_polygon(t, length, sides):
         t.right(external_angle)
 
 
+def cross(t, order=3, length=100):
+    # Draws a recursive cross
+    for _ in range(4):
+        t.forward(length)
+        if order < 1:
+            t.dot()
+        else:
+            cross(t, order-1,int(length/2))
+        t.backward(length)
+        t.right(90)
+
+def main():
+    pen = tur.Turtle()
+    pen.speed(0)
+    cross(pen,3,128)
+    tur.done()
+
+main()
+
 
 
