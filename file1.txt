@@ -1,3 +1,0 @@
-hello
-world
-made some changes into file1.txt
