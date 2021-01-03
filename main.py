@@ -12,4 +12,10 @@ def square(t, length):
         t.forward(length)
         t.right(90)
 
-
+def triangle(t, length):
+    # t stands for turtle
+    # This func is another dev say "CoolDev69"
+    for _ in range(3):
+        t.forward(length)
+        t.right(120)
+   
