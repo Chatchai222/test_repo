@@ -22,6 +22,7 @@ def draw_triangle(t, length):
 
 
 def draw_polygon(t, length, sides):
+    # Draw a standard polygon
     internal_angle = ((sides-2) * 180) / sides
     external_angle = 180 - internal_angle
     for _ in range(sides):
@@ -40,13 +41,9 @@ def cross(t, order=3, length=100):
         t.backward(length)
         t.right(90)
 
-def main():
-    pen = tur.Turtle()
-    pen.speed(0)
-    cross(pen,3,128)
-    tur.done()
 
-main()
+
+
 
 
 
